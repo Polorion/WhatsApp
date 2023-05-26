@@ -7,9 +7,9 @@ export interface IinitialStateAuth {
 }
 
 const initialState: IinitialStateAuth = {
-  ChatNumber: "9118297763",
-  IDToken: "db29315ae9ae48b6810673993d67027087bb7e31443341c89f",
-  Instance: "1101824136",
+  ChatNumber: "",
+  IDToken: "",
+  Instance: "",
 };
 
 export const Authentication = createSlice({

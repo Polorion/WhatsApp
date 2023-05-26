@@ -94,6 +94,9 @@ select {
 input::-ms-clear {
   display: none;
 }
+input::-ms-clear {
+  display: none;
+}
 
 button,
 input[type="submit"] {
