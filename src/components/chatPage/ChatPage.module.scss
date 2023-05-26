@@ -1,0 +1,80 @@
+.body {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.areaText {
+  height: 500px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: auto;
+  background: url("https://media.istockphoto.com/id/1409540606/vector/vector-contact-us-pattern-contact-us-seamless-background.jpg?s=612x612&w=0&k=20&c=3djpAIuo9fE9Mr4T7bLIUpEjqU7XaZk4wWt7aMUgU1o=");
+}
+
+.right {
+  justify-content: flex-start;
+
+  display: flex;
+}
+.left {
+  justify-content: flex-end;
+  display: flex;
+}
+.form {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f6208;
+
+  textarea {
+    width: 70%;
+    resize: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.message {
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+.right {
+  display: flex;
+  .text {
+    background-color: #6b6666;
+    order: 2;
+  }
+}
+.left {
+  .text {
+    background-color: #1b8816;
+  }
+}
+.text {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: 200px;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  span {
+    max-width: 200px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 20px;
+  }
+}
+.time {
+  span {
+    background-color: green;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
