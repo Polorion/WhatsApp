@@ -25,7 +25,6 @@ interface sendMessage {
 export const sendMessage = createAsyncThunk(
   "chat/deleteNotification",
   async ({ params, valueInput }: sendMessage, thunkAPI) => {
-    const dispatch = thunkAPI.dispatch;
     const { data } = await axios.post(
       `https://api.green-api.com/waInstance${params.Instance}/sendMessage/${params.IDToken}
 `,
@@ -34,7 +33,6 @@ export const sendMessage = createAsyncThunk(
         message: valueInput,
       }
     );
-    await dispatch(getAllMessages(params));
   }
 );
 
